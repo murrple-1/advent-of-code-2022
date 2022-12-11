@@ -23,10 +23,7 @@ def main():
     for i in range(6):
         for j in range(40):
             value = x_register_values[(i * 40) + j]
-            if value - 1 < j + 1 < value + 1:
-                sys.stdout.write("#")
-            else:
-                sys.stdout.write(".")
+            sys.stdout.write("#" if value - 2 < j < value + 2 else ".")
 
         sys.stdout.write("\n")
 
