@@ -1,7 +1,6 @@
 from enum import IntEnum
 import itertools
 from typing import Callable, Generator
-import sys
 
 
 class EType(IntEnum):
